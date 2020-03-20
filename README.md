@@ -10,6 +10,10 @@ Copiare il repository con il comando:
 
 `git clone https://github.com/matteospada/dialogflow-heroku-template.git`
 
+Spostarsi nel repository appena scaricato:
+
+`cd dialogflow-heroku-template`
+
 Rimuovere il repository come origine con il comando:
 
 `git remote rm origin`
