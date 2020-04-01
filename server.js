@@ -4,7 +4,7 @@ const basicAuth = require('express-basic-auth')
 
 const app = express()
 
-//======== AUTENTICAZIONE DELLA RICHIESTA ========
+//========= AUTENTICAZIONE DELLA RICHIESTA ========
 
 app.use(basicAuth({
   users: { [process.env.USERNAME]: process.env.PASSWORD },
@@ -19,7 +19,7 @@ function getUnauthorizedResponse(req) {
 
 //================================================
 
-app.get('/', (req, res) => res.send('online'))
+app.get('/', (req, res) => res.send('Server Online'))
 app.post('/dialogflow', express.json(), (req, res) => {
   const agent = new WebhookClient({ request: req, response: res })
 

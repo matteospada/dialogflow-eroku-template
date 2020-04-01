@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "tunnel": "ngrok http 8080",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,7 @@
     "express-basic-auth": "^1.2.0"
   },
   "devDependencies": {
-    "ngrok": "^3.2.7"
+    "ngrok": "^3.2.7",
+    "nodemon": "^2.0.2"
   }
 }
